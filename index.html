@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <header>
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+          <nav role="navigation" class="nav-menu">
+            <ul role="list" class="nav-items">
+              <li class="nav-link dropdown-toggle" data-toggle="dropdown">Features <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="nav-icon" />
+                <ul role="list" class="nav-dropdown">
+                  <li><a href="#" class="drop-link">
+                    <img src="./images/icon-todo.svg" alt="" class="drop-icon">
+                    Todo List
+                  </a></li>
+                  <li><a href="#" class="drop-link">
+                    <img src="./images/icon-calendar.svg" alt="" class="drop-icon">
+                    Calendar
+                  </a></li>
+                  <li><a href="#" class="drop-link">
+                    <img src="./images/icon-reminders.svg" alt="" class="drop-icon">
+                    Reminders
+                  </a></li>
+                  <li><a href="#" class="drop-link _3">
+                    <img src="./images/icon-planning.svg" alt="" class="drop-icon">
+                    Planning
+                  </a></li>
+                </ul>
+              </li>
+              <li class="nav-link dropdown-toggle" data-toggle="dropdown">Company <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="nav-icon" />
+                <ul role="list" class="nav-dropdown _2">
+                  <li><a href="#" class="drop-link">History</a></li>
+                  <li><a href="#" class="drop-link">Our Team</a></li>
+                  <li><a href="#" class="drop-link _3">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="nav-link">Careers</a></li>
+              <li><a href="#" class="nav-link _3">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="btn btn-primary">Login</a>
+          <a href="#" class="btn btn-secondary">Register</a>
+  
+          <div class="menu-icon">
+            <img src="./images/icon-menu.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="menu-close">
+          <img src="./images/icon-close-menu.svg" alt="">
+        </div>
+        <div class="menu-wrapper">
+          <div class="menu-items">
+            <div class="menu-dropdown">
+              <div>
+                <span class="menu-link">Features</span>
+                <img src="./images/icon-arrow-down.svg" alt="" class="drop-icn">
+              </div>
+              <div class="dropdown-body">
+                <a href="#" class="drop-m-link">
+                  <img src="./images/icon-todo.svg" alt="">
+                  Todo List
+                </a>
+                <a href="#" class="drop-m-link">
+                  <img src="./images/icon-calendar.svg" alt="">
+                  Calendar
+                </a>
+                <a href="#" class="drop-m-link">
+                  <img src="./images/icon-reminders.svg" alt="">
+                  Reminders
+                </a>
+                <a href="#" class="drop-m-link">
+                  <img src="./images/icon-planning.svg" alt="">
+                  Planning
+                </a>
+              </div>
+            </div>
+            <div class="menu-dropdown">
+              <div>
+                <span class="menu-link">Company</span>
+                <img src="./images/icon-arrow-down.svg" alt="" class="drop-icn">
+              </div>
+              <div class="dropdown-body">
+                <a href="#" class="drop-m-link">
+                  History
+                </a>
+                <a href="#" class="drop-m-link">
+                  Our Team
+                </a>
+                <a href="#" class="drop-m-link">
+                  Blog
+                </a>
+              </div>
+            </div>
+            <a href="#" class="menu-link">Careers</a>
+            <a href="#" class="menu-link">About</a>
+          </div>
+          <div class="menu-btn">
+            <a href="#" class="btn-primary">Login</a>
+            <a href="#" class="btn-secondary">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <main>
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-left">
+            <h1 class="hero-heading"><span>Make</span> remote work</h1>
+            <p class="hero-pragraph">Get your team in sync, no matter your loctaion. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <a href="#" class="btn-secondary hero-btn">Learn more</a>
+            <div class="hero-icons">
+              <img src="./images/client-databiz.svg" alt="">
+              <img src="./images/client-audiophile.svg" alt="">
+              <img src="./images/client-meet.svg" alt="">
+              <img src="./images/client-maker.svg" alt="">
+            </div>
+          </div>
+          <div class="hero-right">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/iambecksattorov/" class="coder-name" target="_blank">Beck Sattorov</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
